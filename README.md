@@ -20,7 +20,7 @@ https://www.kaggle.com/code/kerneler/starter-the-three-hair-types-21796dbe-e
 3. Run the onnx export script "python3 onnx_export.py --model-dir=models/hair_type"
 4. Exit the docker and assign these variables "NET=models/hair_type" and "DATASET=data/hair_type"
 5. Run this command plugging in any needed info to use the model on an image in the test folder
-   "imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/<folder name>/<image name> <new name>.jpg"
+   "imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/*folder name*/*image name* *new name*.jpg"
    
 ## Required Libraries
 1. NumPy
